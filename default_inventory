@@ -1,0 +1,21 @@
+#Default inventory file, if one is provided or mapped this will not be used.
+#This configures to use local db and single install node.
+
+[primary]
+localhost ansible_connection=local
+
+[secondary]
+
+[database]
+
+[all:vars]
+admin_password='adminP@ssw0rd1!'
+redis_password='redisP@ssw0rd1!'
+
+pg_host=''
+pg_port=''
+
+pg_database='awx'
+pg_username='awx'
+pg_password='pgP@ssw0rd1!'
+
